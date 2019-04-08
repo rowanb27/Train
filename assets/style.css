@@ -1,0 +1,18 @@
+body {
+    background-image: url('../train_tracks.jpg');
+    background-size: cover;
+}
+
+#trainTitle {
+    text-align: center;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lead {
+    font-size: 28px;
+}
+
+#currentTime {
+    font-size: 22px;
+}
