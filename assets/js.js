@@ -37,11 +37,6 @@ $("#addTrainBtn").on("click", function(event) {
 
   database.ref().push(newTrain);
 
-  console.log(newTrain.name);
-  console.log(newTrain.destination);
-  console.log(newTrain.time);
-  console.log(newTrain.frequency);
-
   $("#trainName").val("");
   $("#trainDestination").val("");
   $("#trainTime").val("");
@@ -57,10 +52,6 @@ database.ref().on("child_added", function(childSnapshot) {
   var trainFrequency = childSnapshot.val().frequency;
   var key = childSnapshot.key;
 
-  console.log(trainName);
-  console.log(trainDestination);
-  console.log(trainTime);
-  console.log(trainFrequency);
 
   var currentTime = moment();
   console.log("Current time: " + moment(currentTime).format("hh:mm"));
